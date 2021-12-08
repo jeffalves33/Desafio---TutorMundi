@@ -1,26 +1,40 @@
-/* parte geral */
+/*  ========== parte geral ==========*/
+body{
+    height: 100vh;
+    width: 100vw;
+}
 .container-fluid{
-    border: 1px solid red;
+    border: 2px solid red;
     text-align: center;
+    height: 100vh;
+    width: 100vw;
 }
 .row{
-    border: 1px solid blue;
+    border: 2px solid blue;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
 }
 .col-4{
-    border: 1px solid green;
+    border: 2px solid green;
 }
 #content-main{
-    border: 1px solid yellow;
-}
-#content-book{
-    border: 1px solid black;
-    padding: 0 50px;
-}
-#content-buttons{
-    border: 1px solid blueviolet;
+    border: 2px solid yellow;
 }
 
-p{
+
+
+/* ========== parte do livro, pergunta e estrelas ==========*/
+#img-book{
+    
+}
+
+#content-book{
+    border: 2px solid black;
+    padding: 0 50px;
+}
+
+#text-tutor{
     font-family: Londrina Solid;
     font-style: normal;
     font-weight: normal;
@@ -30,8 +44,48 @@ p{
     letter-spacing: 1px;
 
     color: #000000;
+
+    margin-top: 20px;
 }
 
+#content-stars{
+    margin-top: 20px;
+}
 .stars{
     margin: 2px;
+}
+
+
+
+/* ========== parte dos botões ==========*/
+#content-buttons{
+    border: 2px solid blueviolet;
+    margin-top: 25%;
+}
+
+.buttons{
+    font-family: Work Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: -0.25px;
+
+    border:none!important;
+
+    height: 40px;
+    width: 130px;
+    margin: 5px;
+}
+#button-pular{
+    color: #2CC6D0;
+    background-color: #fff!important;
+    
+}
+#button-confirmar{
+    color: #fff;
+    background-color: #C8C8C8!important;
+    border-radius: 100px;
+    box-shadow: -4px 12px 25px -10px rgba(0, 0, 0, 0.5);
 }
