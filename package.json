@@ -1,0 +1,14 @@
+{
+  "name": "desafio-front-end-tutormundi",
+  "version": "1.0.0",
+  "description": "layout front end",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": "Jeferson Luiz Alves de Souza",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
