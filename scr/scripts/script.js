@@ -1,5 +1,6 @@
 //============================== VARIÁVEIS ====================================
 
+
 //primeiro vamos criar uma variável para todas as estrelas
 let arrayStars = returnStars();
 let numStars   = 0;
@@ -11,6 +12,7 @@ const URL_estrela_vazia = 'url("https://raw.githubusercontent.com/jeffalves33/De
 
 
 //============================== FUNÇÕES ====================================
+
 
 /* retorna um array em que cada índice contem uma das 5 estrelas do layout pelo seu id */
 function returnStars(){
@@ -36,22 +38,24 @@ function starChoice(numberStar){
     else{
         for(var i = 0; i < numberStar; i++) arrayStars[i].style.background = URL_estrela_cheia;
     }
-
     //transformar o botão de confirmar caso PELO MENOS 1 ESTRELA tenha sido preenxida
     starCheck();
 }
 
+
 /*vai verficar se existe pelo menos uma estrela amarela */
 function starCheck(){
-    const background = "background-color: #2CC6D0!important;";
+    const background = "background-color: #2CC6D0!important; box-shadow: -4px 12px 25px -10px #2cc5d07d;";
     let buttonConfirmar = document.getElementById("button-confirmar");
    //sabemos que, se pelo menos a primeira estrela estiver amarela, então haverá a mudança
    //que desejamos no botão, então:
    buttonConfirmar.style = arrayStars[0].style.background == URL_estrela_cheia ? background : null;
 }
 
+
 /* função rsponsável pelo botão PULAR */
 function jump(){ alert("não deu nenhuma estrela :(")}
+
 
 /* função rsponsável pelo botão CONFIRMAR */
 function confirmed(){ if(numStars > 0) alert(`${numStars} estrelas de avaliação :)`) }
